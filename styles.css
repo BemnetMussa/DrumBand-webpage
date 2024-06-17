@@ -1,0 +1,66 @@
+body {
+  text-align: center;
+  margin-top: 200px;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgb(137, 120, 101);
+}
+
+
+h1 {
+  font-size: 3rem;
+}
+
+.set {
+  display: flex;
+  justify-content: space-evenly;
+
+  margin: 0 auto;
+  width: 60vw;
+  flex-wrap: wrap;
+  
+  
+}
+
+button {
+  padding: 50px;
+  margin: 10px;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(236, 241, 245);
+}
+
+
+footer {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.w {
+  background-image: url(/images/tom1.png);
+}
+
+.a {
+  background-image: url(/images/tom2.png);
+}
+
+.s {
+  background-image: url(/images/tom3.png);
+}
+
+.d {
+  background-image: url(/images/tom4.png);
+}
+
+.j {
+  background-image: url(/images/crash.png);
+}
+
+.k {
+  background-image: url(/images/kick.png);
+}
+
+.l {
+  background-image: url(/images/snare.png);
+}
