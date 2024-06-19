@@ -17,14 +17,19 @@ for(var i = 0; i < document.querySelectorAll("button").length; i++){
         for (var j= 0; j < document.querySelectorAll("button").length; j++){
             document.querySelectorAll("button")[j].style.color = "black";
         };
-        this.style.color = "green";
+        this.style.color = "white";
         audioFunc(this.innerHTML)
-
+        activeButton(this.innerHTML)
 })};
 
 
 document.addEventListener("keypress", function(event) {
+    for (var j= 0; j < document.querySelectorAll("button").length; j++){
+        document.querySelectorAll("button")[j].style.color = "black";
+    };
+    document.querySelector("." + event.key).style.color = "white"
     audioFunc(event.key);
+    activeButton(event.key)
 });
 
 
@@ -61,6 +66,16 @@ function audioFunc(character){
         case 'l':
             var audio = new Audio("/sounds/snare.mp3");
             audio.play();
-            break;
+            break; 
     }
+
+}
+
+function activeButton(key){
+    
+    document.querySelector('.' + key).classList.add("pressed");
+    
+    setTimeout(function () {
+        document.querySelector('.' + key).classList.remove("pressed")
+    }, 100)
 }
